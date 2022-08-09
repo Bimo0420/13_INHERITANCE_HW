@@ -8,30 +8,30 @@ namespace N1
 {
     internal class MultiBuilding:Building //дочерний класс
     {
-        int Level;
-        int LEVEL
+        int level;
+        int Level
         {
             get
             {
-                return Level;
+                return level;
             }
             set
             {
                 if (value < 0)
-                    Level = 0;
+                    level = 0;
                 else
-                    Level = value;
+                    level = value;
             }
         }
         public MultiBuilding(string adress, double length, double Width, double Height, int level)   //когда мы используем в род классе конструктор мы должны в дочернем классе оапределить конструктор и вызвать род конструктор через слово base
             : base(adress, length, Width, Height)
         {
-            this.Level = level; 
+            this.level = level; 
         }
         public string Print()
         {
             string result = base.Print();
-            result += $" {Level} этажей";
+            result += $" {level} этажей";
             return result;
         }
     }

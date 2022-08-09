@@ -26,7 +26,7 @@ namespace N1    //Задан класс Building, который описыва�
     {
         static void Main(string[] args)
         {
-            Building build = new Building("Brighton", -5, -20, -0);
+            Building build = new Building("Brighton", -5, 20, 0);
             MultiBuilding mbuild = new MultiBuilding("Brighton", 10, 20, 30, 6);
             Console.WriteLine(build.Print());
             Console.WriteLine(mbuild.Print());

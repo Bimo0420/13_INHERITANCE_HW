@@ -8,63 +8,63 @@ namespace N1
 {
     internal class Building //родительский класс
     {
-        string Adress;
-        double Length;
-        double Width;
-        double Height;
+        string adress;
+        double length;
+        double width;
+        double height;
 
-        double LENGTH
+        double Length
         {
             get
             {
-                return Length;
+                return length;
             }
             set
             {
                 if (value < 0)
-                    Length = 0;
+                    length = 0;
                 else
-                    Length = value;
+                    length = value;
             }
         }
-        double WIDTH
+        double Width
         {
             get
             {
-                return Width;
+                return width;
             }
             set
             {
                 if (value < 0)
-                    Width = 0;
+                    width = 0;
                 else
-                    Width = value;
+                    width = value;
             }
         }
-        double HEIGTH
+        double Height
         {
             get
             {
-                return Height;
+                return height;
             }
             set
             {
                 if (value < 0)
-                    Height = 0;
+                    height = 0;
                 else
-                    Height = value;
+                    height = value;
             }
         }
         public Building (string adress, double length, double width, double height)
         {
-            this.Adress = adress; //инициализация полей
+            this.adress = adress; //инициализация полей
             this.Length = length;
             this.Width = width;
             this.Height = height;
         }
         public string Print()
         {
-            return $"{Adress} {Length} {Width} {Height}";
+            return $"{adress} {Length} {Width} {Height}";
             
         }
 
