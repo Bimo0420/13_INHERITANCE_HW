@@ -64,7 +64,7 @@ namespace N1
         }
         public string Print()
         {
-            return $"{Adress} {Length} {Width} {Height}";
+            return $"{adress} {length} {width} {height}";
             
         }
 
