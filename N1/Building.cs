@@ -57,7 +57,7 @@ namespace N1
         }
         public Building (string adress, double length, double width, double height)
         {
-            this.Adress = adress; //инициализация полей
+            this.Adress = adress; //инициализация полей/
             this.Length = length;
             this.Width = width;
             this.Height = height;
